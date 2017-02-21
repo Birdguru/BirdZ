@@ -1,4 +1,3 @@
-
 <?php
 error_reporting(0);
 $secret = "43726974746572526162626974";
@@ -22,7 +21,7 @@ class probabilityRandom {
     }
 
     #remove an item from the list
-    function remove( $index ){
+   function remove( $index ){
         if( $index > -1 && $index < sizeof( $this->data ) ) {
             $item = array_splice( $this->data, $index, 1 );
             $this->universe -= $item->probability;
